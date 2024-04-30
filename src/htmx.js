@@ -549,6 +549,7 @@ return (function () {
                     elt = null;
                 }, delay);
             } else {
+                cleanUpElement(elt);
                 elt.parentElement.removeChild(elt);
             }
         }
